@@ -31,6 +31,9 @@ class _AnimatedPhysicalModelExampleState
                 });
               },
               child: AnimatedPhysicalModel(
+                onEnd: () {
+                  print("Animation complete");
+                },
                 shape: _isCircle ? BoxShape.circle : BoxShape.rectangle,
                 elevation: _isCircle ? 10 : 2,
                 color: _isCircle ? Colors.blue : Colors.green,

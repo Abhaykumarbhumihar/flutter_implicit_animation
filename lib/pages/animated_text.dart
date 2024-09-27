@@ -22,6 +22,9 @@ class _AnimatedTextExampleState extends State<AnimatedTextExample> {
         child: Column(
           children: <Widget>[
             AnimatedDefaultTextStyle(
+              onEnd: () {
+                print("Animation complete");
+              },
               style: TextStyle(
                 fontSize: _isTap ? 30 : 20, // Font size changes
                 color: _isTap ? Colors.blue : Colors.red, // Font color changes

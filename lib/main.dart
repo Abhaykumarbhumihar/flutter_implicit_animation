@@ -5,6 +5,7 @@ import 'package:animation_flutter/pages/animated_crossfade.dart';
 import 'package:animation_flutter/pages/animated_icon.dart';
 import 'package:animation_flutter/pages/animated_padding.dart';
 import 'package:animation_flutter/pages/animated_physical_model.dart';
+import 'package:animation_flutter/pages/animated_sizebox.dart';
 import 'package:animation_flutter/pages/animated_switcher.dart';
 import 'package:animation_flutter/pages/animated_text.dart';
 import 'package:animation_flutter/pages/animation_container.dart';
@@ -32,7 +33,7 @@ class _MyAppState extends State<MyApp> {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: AnimatedIconExample(),
+      home: AnimatedSizeboxExample(),
     );
   }
 }

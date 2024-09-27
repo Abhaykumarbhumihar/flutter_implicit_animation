@@ -27,6 +27,9 @@ class _AnimatedPaddingState extends State<AnimatedPaddingExample> {
                 // Animation duration
                 curve: Curves.easeInOut,
                 // Animation curve
+                onEnd: () {
+                  print("Animation complete");
+                },
                 child: Container(
                   width: MediaQuery.of(context).size.width,
                   height: MediaQuery.of(context).size.height/3,

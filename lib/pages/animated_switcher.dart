@@ -27,6 +27,7 @@ class _AnimatedSwitcherExampleState extends State<AnimatedSwitcherExample> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             AnimatedSwitcher(
+
               duration: const Duration(seconds: 1),
               transitionBuilder: (Widget child, Animation<double> animation) {
                 return RotationTransition(turns: animation,alignment: Alignment.center,child: child);
@@ -38,6 +39,7 @@ class _AnimatedSwitcherExampleState extends State<AnimatedSwitcherExample> {
                 //   child: child,
                 // );
               },
+
               child: _isFirstWidget
                   ? Container(
                       key: UniqueKey(),

@@ -24,6 +24,7 @@ class _AnimatedCrossfadeExampleState extends State<AnimatedCrossfadeExample> {
           children: <Widget>[
 
             AnimatedCrossFade(
+
                 firstChild: Image.network('https://picsum.photos/250?image=9'),
                 secondChild: Image.network('https://picsum.photos/250?image=10'),
                 crossFadeState: _isFirst?CrossFadeState.showFirst:CrossFadeState.showSecond,

@@ -42,6 +42,9 @@ class _AnimationContainerExampleState extends State<AnimationContainerExample> {
                     itemCount: colors.length,
                     itemBuilder: (context, index) {
                       return AnimatedContainer(
+                        onEnd: () {
+                          print("Animation complete");
+                        },
                         duration: const Duration(seconds: 2),
                         curve: Curves.easeOutSine,
                         width: 150,

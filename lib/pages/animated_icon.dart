@@ -50,6 +50,7 @@ class _AnimatedIconExampleState extends State<AnimatedIconExample>
                 });
               },
               child: AnimatedIcon(
+
                 icon: AnimatedIcons.play_pause,
                 progress: _animationController,
                 size: 100,
