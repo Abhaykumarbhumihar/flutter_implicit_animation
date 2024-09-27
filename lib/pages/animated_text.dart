@@ -22,7 +22,6 @@ class _AnimatedTextExampleState extends State<AnimatedTextExample> {
         child: Column(
           children: <Widget>[
             AnimatedDefaultTextStyle(
-              child: const Text("Abhay kumar bhumihar"),
               style: TextStyle(
                 fontSize: _isTap ? 30 : 20, // Font size changes
                 color: _isTap ? Colors.blue : Colors.red, // Font color changes
@@ -32,9 +31,10 @@ class _AnimatedTextExampleState extends State<AnimatedTextExample> {
               ),
               duration: const Duration(seconds: 1),
               // Animation duration
-              curve: Curves.easeInOut, // Animation curve for a smooth effect
+              curve: Curves.easeInOut,
+              child: const Text(
+                  "Abhay kumar bhumihar"), // Animation curve for a smooth effect
             ),
-
             AnimatedPadding(
               duration: const Duration(seconds: 2),
               curve: Curves.linear,

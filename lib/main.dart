@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:animation_flutter/pages/animated_button.dart';
 import 'package:animation_flutter/pages/animated_crossfade.dart';
+import 'package:animation_flutter/pages/animated_icon.dart';
 import 'package:animation_flutter/pages/animated_padding.dart';
 import 'package:animation_flutter/pages/animated_physical_model.dart';
 import 'package:animation_flutter/pages/animated_switcher.dart';
@@ -31,7 +32,7 @@ class _MyAppState extends State<MyApp> {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: AnimatedTextExample(),
+      home: AnimatedIconExample(),
     );
   }
 }
