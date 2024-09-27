@@ -18,7 +18,6 @@ class _AnimatedIconExampleState extends State<AnimatedIconExample>
     _animationController =
         AnimationController(duration: const Duration(seconds: 2), vsync: this);
     super.initState();
-
   }
 
   @override
@@ -39,23 +38,23 @@ class _AnimatedIconExampleState extends State<AnimatedIconExample>
         height: MediaQuery.of(context).size.height,
         child: Column(
           children: <Widget>[
-
             GestureDetector(
-              onTap: (){
+              onTap: () {
                 setState(() {
-                  _isBtnplayorPuse=!_isBtnplayorPuse;
-                  if(_isBtnplayorPuse){
+                  _isBtnplayorPuse = !_isBtnplayorPuse;
+                  if (_isBtnplayorPuse) {
                     _animationController.forward();
-                  }else{
+                  } else {
                     _animationController.reverse();
                   }
                 });
               },
-              child: AnimatedIcon(icon: AnimatedIcons.play_pause,
-                  progress: _animationController,
-              size: 100,),
+              child: AnimatedIcon(
+                icon: AnimatedIcons.play_pause,
+                progress: _animationController,
+                size: 100,
+              ),
             )
-
           ],
         ),
       ),
