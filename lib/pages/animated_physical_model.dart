@@ -27,7 +27,7 @@ class _AnimatedPhysicalModelExampleState
             GestureDetector(
               onTap: () {
                 setState(() {
-                  _isCircle = !_isCircle; // Toggle between circle and rectangle
+                  _isCircle = !_isCircle;
                 });
               },
               child: AnimatedPhysicalModel(

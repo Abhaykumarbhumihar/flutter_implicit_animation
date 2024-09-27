@@ -2,14 +2,14 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class AnimationContainerExample extends StatefulWidget {
+  const AnimationContainerExample({super.key});
 
   @override
-  State<HomePage> createState() => _MyHomePageState();
+  State<AnimationContainerExample> createState() => _AnimationContainerExampleState();
 }
 
-class _MyHomePageState extends State<HomePage> {
+class _AnimationContainerExampleState extends State<AnimationContainerExample> {
   List<Color> generateRandomColors(int count) {
     Random random = Random();
     List<Color> colorList = [];
