@@ -5,6 +5,7 @@ import 'package:animation_flutter/pages/animated_crossfade.dart';
 import 'package:animation_flutter/pages/animated_padding.dart';
 import 'package:animation_flutter/pages/animated_physical_model.dart';
 import 'package:animation_flutter/pages/animated_switcher.dart';
+import 'package:animation_flutter/pages/animated_text.dart';
 import 'package:animation_flutter/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -30,7 +31,7 @@ class _MyAppState extends State<MyApp> {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: AnimatedPhysicalModelExample(),
+      home: AnimatedTextExample(),
     );
   }
 }

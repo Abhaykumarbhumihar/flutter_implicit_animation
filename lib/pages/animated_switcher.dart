@@ -17,7 +17,7 @@ class _AnimatedSwitcherExampleState extends State<AnimatedSwitcherExample> {
     return SafeArea(
         child: Scaffold(
       appBar: AppBar(
-        title: Text("AnimatedSwitcher"),
+        title: const Text("AnimatedSwitcher"),
       ),
       body: Container(
         width: MediaQuery.of(context).size.width,
@@ -27,7 +27,7 @@ class _AnimatedSwitcherExampleState extends State<AnimatedSwitcherExample> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             AnimatedSwitcher(
-              duration: Duration(seconds: 1),
+              duration: const Duration(seconds: 1),
               transitionBuilder: (Widget child, Animation<double> animation) {
                 return RotationTransition(turns: animation,alignment: Alignment.center,child: child);
 
@@ -52,7 +52,7 @@ class _AnimatedSwitcherExampleState extends State<AnimatedSwitcherExample> {
                       color: Colors.blue,
                     ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 setState(() {
@@ -60,7 +60,7 @@ class _AnimatedSwitcherExampleState extends State<AnimatedSwitcherExample> {
                   print(_isFirstWidget);
                 });
               },
-              child: Text('Switch Widget'),
+              child: const Text('Switch Widget'),
             ),
           ],
         ),
