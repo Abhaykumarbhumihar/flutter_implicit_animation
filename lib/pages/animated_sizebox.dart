@@ -16,7 +16,7 @@ class _AnimatedSizeboxExampleState extends State<AnimatedSizeboxExample> {
     return SafeArea(
         child: Scaffold(
       appBar: AppBar(
-        title: Text("AnimatedSizebox"),
+        title: const Text("AnimatedSizebox"),
       ),
       body: Container(
         width: MediaQuery.of(context).size.width,
@@ -24,8 +24,10 @@ class _AnimatedSizeboxExampleState extends State<AnimatedSizeboxExample> {
         child: Column(
           children: <Widget>[
             AnimatedSize(
-              duration: Duration(seconds: 1), // Animation duration
-              curve: Curves.easeInOut, // Animation curve
+              duration: const Duration(seconds: 1),
+              // Animation duration
+              curve: Curves.easeInOut,
+              // Animation curve
               onEnd: () {
                 print("Animation complete");
               },
@@ -39,18 +41,18 @@ class _AnimatedSizeboxExampleState extends State<AnimatedSizeboxExample> {
                 alignment: Alignment.center,
                 child: Text(
                   "Tap to ${_isExpanded ? 'shrink' : 'expand'}",
-                  style: TextStyle(color: Colors.white, fontSize: 20),
+                  style: const TextStyle(color: Colors.white, fontSize: 20),
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 setState(() {
                   _isExpanded = !_isExpanded;
                 });
               },
-              child: Text("Toggle Size"),
+              child: const Text("Toggle Size"),
             ),
           ],
         ),
