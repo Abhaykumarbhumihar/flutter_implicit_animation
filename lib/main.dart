@@ -12,6 +12,7 @@ import 'package:animation_flutter/pages/animated_switcher.dart';
 import 'package:animation_flutter/pages/animated_text.dart';
 import 'package:animation_flutter/pages/animation_container.dart';
 import 'package:animation_flutter/pages/hero_animation/first_screen.dart';
+import 'package:animation_flutter/pages/list_animation.dart';
 import 'package:flutter/material.dart';
 
 import 'pages/animated_align.dart';
@@ -37,7 +38,7 @@ class _MyAppState extends State<MyApp> {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: FirstScreen(),
+      home: const ListAnimationExample(),
     );
   }
 }
