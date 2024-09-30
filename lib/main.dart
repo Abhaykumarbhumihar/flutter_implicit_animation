@@ -6,6 +6,7 @@ import 'package:animation_flutter/pages/animated_icon.dart';
 import 'package:animation_flutter/pages/animated_padding.dart';
 import 'package:animation_flutter/pages/animated_physical_model.dart';
 import 'package:animation_flutter/pages/animated_position.dart';
+import 'package:animation_flutter/pages/animated_rotation.dart';
 import 'package:animation_flutter/pages/animated_sizebox.dart';
 import 'package:animation_flutter/pages/animated_switcher.dart';
 import 'package:animation_flutter/pages/animated_text.dart';
@@ -27,7 +28,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -36,7 +36,7 @@ class _MyAppState extends State<MyApp> {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: AnimatedPositionExample(),
+      home: AnimatedRotationExample(),
     );
   }
 }
