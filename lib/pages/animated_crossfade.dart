@@ -14,7 +14,7 @@ class _AnimatedCrossfadeExampleState extends State<AnimatedCrossfadeExample> {
   @override
   Widget build(BuildContext context) {
     return  SafeArea(child: Scaffold(
-      appBar: AppBar(title: Text("AnimatedCrossFade"),),
+      appBar: AppBar(title: const Text("AnimatedCrossFade"),),
       body: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
@@ -24,17 +24,17 @@ class _AnimatedCrossfadeExampleState extends State<AnimatedCrossfadeExample> {
           children: <Widget>[
 
             AnimatedCrossFade(
-
                 firstChild: Image.network('https://picsum.photos/250?image=9'),
                 secondChild: Image.network('https://picsum.photos/250?image=10'),
                 crossFadeState: _isFirst?CrossFadeState.showFirst:CrossFadeState.showSecond,
-                duration: Duration(seconds: 3)),
+                duration: const Duration(seconds: 3)
+            ),
 
             ElevatedButton(onPressed: (){
               setState(() {
                 _isFirst=!_isFirst;
               });
-            }, child: Text("Swape image"))
+            }, child: const Text("Swape image"))
           ],
         ),
       ),

@@ -21,7 +21,7 @@ class _TweenAnimationState extends State<TweenAnimation> {
           children: <Widget>[
             TweenAnimationBuilder(
               tween: Tween(begin: 10.0, end: 190.0),
-              duration: Duration(seconds: 5),
+              duration: const Duration(seconds: 5),
               builder: (context, value, child) {
                 return Center(
                   child: Container(
